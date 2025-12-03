@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução de Exercícios com Estrutura For</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #28a745; }
+        .exercicios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px; }
+        button { padding: 10px; border: none; border-radius: 5px; cursor: pointer; background-color: #28a745; color: white; transition: background-color 0.3s; }
+        button:hover { background-color: #1e7e34; }
+        #output_for { border: 1px solid #ccc; padding: 15px; min-height: 50px; background-color: #e6ffed; white-space: pre-wrap; margin-top: 20px;}
+        .titulo-output { font-weight: bold; margin-bottom: 10px; color: #1e7e34; }
+    </style>
+</head>
+<body>
+    <h1>⏩ Exercícios de JavaScript (Estrutura For)</h1>
+
+    <div class="exercicios">
+        <button onclick="executarExercicioFor(1)">1) 1 a 20</button>
+        <button onclick="executarExercicioFor(2)">2) Pares 1 a 50</button>
+        <button onclick="executarExercicioFor(3)">3) Tabuada (Prompt)</button>
+        <button onclick="executarExercicioFor(4)">4) Soma 1 a 100</button>
+        <button onclick="executarExercicioFor(5)">5) Soma Pares 1 a 200</button>
+        <button onclick="executarExercicioFor(6)">6) Maior/Menor 10 Números (Prompt)</button>
+        <button onclick="executarExercicioFor(7)">7) Média 5 Números (Prompt)</button>
+        <button onclick="executarExercicioFor(8)">8) Fibonacci até 10º termo</button>
+        <button onclick="executarExercicioFor(9)">9) Números de 1 até N (Prompt)</button>
+        <button onclick="executarExercicioFor(10)">10) Ímpares 100 e 200</button>
+        <button onclick="executarExercicioFor(11)">11) Maiores de Idade 10 Idades (Prompt)</button>
+        <button onclick="executarExercicioFor(12)">12) Fatorial (Prompt)</button>
+        <button onclick="executarExercicioFor(13)">13) Soma Múltiplos de 3 até N (Prompt)</button>
+        <button onclick="executarExercicioFor(14)">14) 5 Nomes Invertidos (Prompt)</button>
+        <button onclick="executarExercicioFor(15)">15) Triângulo de Asteriscos (Prompt)</button>
+    </div>
+
+    <hr>
+
+    <div class="titulo-output">Resultado do Exercício:</div>
+    <div id="output_for">Clique em um botão para ver o resultado aqui.</div>
+
+    <script src="script_for.js"></script>
+</body>
+</html>
